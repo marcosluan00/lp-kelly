@@ -1,0 +1,22 @@
+<section id="contato" class="py-16 px-6">
+  <div class="container mx-auto max-w-lg text-center">
+    <h3 class="text-3xl font-bold text-gray-800 mb-8">Entre em Contato</h3>
+    <form class="bg-gray-50 shadow-md rounded-lg px-8 pt-6 pb-8">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm mb-2" for="name">Nome</label>
+        <input [(ngModel)]="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Seu nome">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm mb-2" for="email">Email</label>
+        <input [(ngModel)]="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Seu email">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm mb-2" for="message">Mensagem</label>
+        <textarea [(ngModel)]="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Sua mensagem"></textarea>
+      </div>
+      <div class="flex items-center justify-center">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</section>

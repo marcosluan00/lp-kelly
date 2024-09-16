@@ -1,0 +1,22 @@
+<header class="bg-white border-b border-gray-200">
+  <div class="container mx-auto flex flex-wrap items-center py-4 px-6">
+    <!-- Título alinhado à esquerda -->
+    <h1 class="text-2xl font-semibold text-gray-800 flex-1 lg:flex-none">Kelly Ketlen - Psicóloga Infantil</h1>
+    
+    <!-- Botão do menu hambúrguer (visível apenas em telas pequenas) -->
+    <button class="lg:hidden flex items-center text-gray-600 hover:text-blue-500 ml-4" (click)="toggleMenu()">
+      <!-- Ícone do menu hambúrguer -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+    
+    <!-- Menu de navegação (visível em telas grandes e quando o menu está aberto em telas pequenas) -->
+    <nav [ngClass]="{'hidden': !menuOpen, 'flex': menuOpen, 'lg:flex': true}" class="w-full lg:w-auto lg:flex lg:items-center lg:space-x-6 mt-4 lg:mt-0 lg:ml-auto">
+      <a href="#home" class="block text-gray-600 hover:text-blue-500 py-2 lg:py-0">Home</a>
+      <a href="#sobre" class="block text-gray-600 hover:text-blue-500 py-2 lg:py-0">Sobre</a>
+      <a href="#servicos" class="block text-gray-600 hover:text-blue-500 py-2 lg:py-0">Serviços</a>
+      <a href="#contato" class="block text-gray-600 hover:text-blue-500 py-2 lg:py-0">Contato</a>
+    </nav>
+  </div>
+</header>
